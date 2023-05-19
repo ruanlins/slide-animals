@@ -1,3 +1,5 @@
-import Slide from "./slide";
+/* eslint-disable import/extensions */
+import Slide from './slide.js';
 
-const slide = new Slide(".slide", ".wrapper");
+const slide = new Slide('.slide', '.wrapper');
+slide.init();
