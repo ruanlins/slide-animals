@@ -36,7 +36,7 @@ export default class Slide {
   }
 
   onEnd(event) {
-    const movetype = (event.type = 'mouseup') ? 'mousemove' : 'touchmove';
+    const movetype = (event.type === 'mouseup') ? 'mousemove' : 'touchmove';
     this.wrapper.removeEventListener(movetype, this.onMove);
     this.dist.finalPosition = this.dist.movePosition;
   }
